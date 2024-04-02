@@ -11,9 +11,9 @@ lsi: false
 markdown: kramdown
 
 ### content configuration ###
-title: "The African Continent at IROS 2024"
+title: "Robotics in Africa Forum at IROS 2024"
 keywords: "africa, robotics, iros"
-description: "The African Continent at IROS 2024"
+description: "Robotics in Africa Forum at IROS 2024"
 source_link: "https://github.com/africarobotics/iros2024"
 favicon: #put a path like: "img/favicon.ico"
 touch_icon: #put a path like: "img/apple-touch-icon.png"
