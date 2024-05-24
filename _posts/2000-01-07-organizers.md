@@ -8,7 +8,7 @@ style: left
 ## Organizing Committee
 
 {: .offset-by-two .columns}
-- Chinwe Ekenna, Ph.D., University of Albany
+- Chinwe Ekenna, Ph.D., University at Albany NY
 - Kenechukwu C. Mbanisi, Ph.D., Olin College of Engineering
 - Simeon Adebola, University of California, Berkeley
 - Addisu Taddese, Ph.D., Intrinsic
