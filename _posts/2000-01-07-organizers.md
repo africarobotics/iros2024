@@ -12,3 +12,8 @@ style: left
 - Kenechukwu C. Mbanisi, Ph.D., Olin College of Engineering
 - Simeon Adebola, University of California, Berkeley
 - Addisu Taddese, Ph.D., Intrinsic
+
+## Contact Us
+
+If you have any questions, please contact us at <roboticsinafrica@gmail.com>
+
