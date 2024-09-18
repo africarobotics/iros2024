@@ -1,65 +1,725 @@
----
----
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
-	<meta name="keywords" content="{{ site.keywords }}">
-	<meta name="description" content="{{ site.description }}">
-  {% assign cacheBust = site.time | date:'?v=%s' %}
-  <link rel="stylesheet" href="{{ "combo.css" | relative_url | append: cacheBust }}">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
-	{% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Africa Robotics</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+ <script src="script.js" defer></script>
+
 </head>
-<body>
-  <div id="main">
+<body id="home">
+	<input type="checkbox" id="bg-togller">
+	<input type="checkbox" id="nav-togller">
 
-    <nav><ul>
-      {% for node in site.posts reversed %}
-        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
-        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
-      {% endfor %}
-    </ul></nav>
+<div class="site-contents">
+
+	<nav class="nav-bar">
+		<div class="site-container">
+			<a href="#" class="nav-brand">
+				<span></span>
+
+				<span></span>
+				
+ <h1 class="d-mode"><img src="Images/Logo.png" alt="Our Logo" width="60" height="40"></h1>
+        <h1 class="b-mode"><img src="Images/Logo1.png" alt="Our Logo" width="60" height="40"></h1>
+
+			</a>
+
+			<ul class="main-nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#date">Date</a></li>
+				<li><a href="#CFP">CFP</a></li>
+				<li><a href="#attend">Attend</a></li>
+				<li><a href="#program">Program</a></li>
+				<li><a href="#sponsors">Sponsors</a></li>
+				<li><a href="#organizers">Organizers</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#poster">Posters</a></li>
+				<li class="nav-btn"><a href="#contact">Contact Us</a></li>
+			</ul>
+
+			<label class="mode-toggler" for="bg-togller"></label>
+			<label class="mobile-togller" for="nav-togller">
+				<span></span>
+				<span></span>
+				<span ></span>
+			</label>
+		</div>
+
+	</nav>
+
+	<header class="header" >
+		<img src="Images/Header3.png" alt="Our Header" >
+        
+        <span ></span>
+		<h1 class="d-mode" style="font-size: 3em;" >Welcome to Robotics in Africa Forum at IROS 2024</h1>
+		<h1 class="b-mode" style="font-size: 3em;">Welcome to Robotics in Africa Forum at IROS 2024</h1>
+	</header>
 
 
-    {% for page in site.posts reversed %}
-      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
-      <div id="{{id}}" class="section p-{{id}}">
-        {% if page.icon %}
-        <div class="subtlecircle sectiondivider imaged">
-          <img src="{{page.icon}}" alt="section icon" />
-          <h5 class="icon-title">{{ page.title }}</h5>
+<div >
+    <p style="font-size: 1.2em; padding: 40px; padding-bottom: 0px; padding-top: 0px; font-weight: normal; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        The <span style="font-weight: bold; color: #2c3e50;">Robotics in Africa Forum</span> will take place at the 2024 IEEE/RSJ International Conference on Intelligent Robotics and Systems (IROS) in Abu Dhabi, UAE on October 16th, 2024.
+    </p>
+
+    <p style="font-size: 1.2em; padding: 40px; padding-top: 0px; padding-bottom: 0px; font-weight: normal; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        The forum serves as a spotlight, illuminating the <span style="font-weight: bold; color: #e74c3c;">remarkable work</span> happening in the field of robotics across the African continent. From <span style="font-weight: bold; color: #3498db;">cutting-edge research</span> to <span style="font-weight: bold; color: #f39c12;">practical industrial applications, education, and training</span>, this forum aims to showcase the state of robotics in Africa. By providing <span style="font-weight: bold; color: #16a085;">legitimacy, publicity, and credibility</span>, we celebrate novel and innovative efforts undertaken by Africans and their collaborators.
+    </p>
+
+    <h2 style="padding: 40px; padding-top: 0px; padding-bottom: 0px; color: #34495e;">Key Objectives:</h2>
+
+    <ul style="font-size: 1.2em; padding: 40px; padding-top: 0px; padding-bottom: 0px; font-weight: normal; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <li><span style="font-weight: bold; color: #e74c3c;">Highlighting Excellence:</span> We shine a light on outstanding work going on the continent, emphasizing the impact of robotics research and development in Africa.</li>
+        <li><span style="font-weight: bold; color: #3498db;">Exploring Opportunities:</span> The forum explores opportunities for robotics and A.I. applications within the continent, identifying areas for growth and collaboration.</li>
+        <li><span style="font-weight: bold; color: #16a085;">Networking:</span> Beyond borders, this event fosters networking opportunities, connecting robotics enthusiasts within Africa with the global robotics community.</li>
+    </ul>
+
+    <p style="font-size: 1.2em; padding: 40px; padding-top: 0px; padding-bottom: 0px; font-weight: normal; text-align: justify; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" id="date">
+        Join us at IROS 2024 to celebrate the vibrant robotics community in Africa and contribute to its continued growth!
+    </p>
+</div>
+
+
+
+   
+
+
+    <div class="content-txt">
+                    <div class="content-txt-main">
+                        <div class="this-anim">
+                            <span>Dates</span>
+                            <span>Dates</span>
+                        </div>
+                        <h2>Important Dates</h2>
+                        </div>
+
+
+<div class="container1" >
+        <h1>Call for Participation Opening Date</h1>
+        
+        <div class="important-date">
+            <span class="description">Opens:</span>
+            <span class="date">May 22, 2024</span>
         </div>
-        {% elsif page.fa-icon %}
-        <div class="subtlecircle sectiondivider faicon">
-          <span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
-          </span>
-          <h5 class="icon-title">{{ page.title }}</h5>
-        </div>
-        {% endif %}
-        <div class="container {{ page.style }}">
-          {{ page.content }}
-        </div>
-      </div>
-    {% endfor %}
 
 
-    <div id="footer" class="section text-white">
-      <div class="container">
-        {% capture foottext %} {% include footer.md %} {% endcapture %}
-        {{ foottext | markdownify }}
-      </div>
+        <div class="important-date">
+            <span class="description">Forum Date:</span>
+            <span class="date">2024-10-16 18:30</span>
+        </div>
+
+
+
+        <div class="important-date">
+            <span class="description">Deadline for extended abstract submission:</span>
+            <span class="date"><strike>July 18, 2024</strike>  August 15, 2024</span>
+        </div>
+
+        <div class="important-date registration-link" >
+            <span class="description">Conference registration deadline:</span>
+            <span class="date" ><a href="https://iros2024-abudhabi.org/registration">See IROS 2024 Registration</a></span>
+        </div>
+            <span id="CFP"></span>
     </div>
-  </div>
+  
 
-{% include analytics.html %}
+ <div class="content-txt" >
+                    <div class="content-txt-main">
+                        <div class="this-anim">
+                            <span style="text-align: center;" >Call For Participation</span>
+                            <span style="text-align: center;">Call For Participation</span>
+
+                     </div>
+                        
+						</div>
+           
+
+
+           <div style="padding: 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <h1 style="font-size: 2em; font-weight: bold; color: #f39c12; text-align: center; margin-top: 0; margin-bottom: 20px;">
+        Invitations to Researchers
+    </h1>
+
+    <p style="font-size: 1.2em; line-height: 1.6; padding: 10px; margin: 0;">
+        We invite researchers (including faculty, students, and industry engineers) from, or collaborating with, African institutions to submit a 2-4 page extended abstract following the IEEE conference format. These abstracts should highlight exciting research outcomes, ongoing projects, and demonstrations that showcase the diverse landscape of robotics research and industry initiatives in Africa. The forum organizers will review the submissions, and accepted abstracts will be featured in the poster and demo presentation session during the forum. The results from the forum will be collated into a peer-reviewed publication.
+    </p>
+
+    <p style="font-size: 1.2em; line-height: 1.6; padding: 10px; margin: 20px 0;">
+        <strong>Submission Link:</strong> <a href="https://cmt3.research.microsoft.com/RAF2024/" style="color: #3498db; text-decoration: none;">https://cmt3.research.microsoft.com/RAF2024/</a>
+    </p>
+
+    <p style="font-size: 1.2em; line-height: 1.6; padding: 10px; margin: 0;"> <span id="attend"></span>
+        <strong>Submission format templates:</strong> <a href="https://www.ieee.org/conferences/publishing/templates.html" style="color: #3498db; text-decoration: none;">https://www.ieee.org/conferences/publishing/templates.html</a>
+    </p>
+
+	</div>
+
+
+
+	
+
+
+
+				 <div class="content-txt">
+                    <div class="content-txt-main">
+                        <div class="this-anim">
+                            <span style="text-align: center;">Venue Details</span>
+                            <span style="text-align: center;">Venue Details</span>
+
+                     </div>
+                        
+						</div>
+					</div>
+
+
+
+
+
+    <p style="font-size: 1.2em; line-height: 1.6; padding: 10px; margin: 0;">
+        The African Continent at IROS 2024 workshop will be held in Abu Dhabi. For details about the venue, please visit 
+        <a href="https://iros2024-abudhabi.org/travel-support#venue" style="color: #3498db; text-decoration: none;">https://iros2024-abudhabi.org/travel-support#venue</a>.
+    </p>
+
+    <h2 style="font-size: 1.8em; font-weight: bold; color: #f39c12; text-align: center; margin-top: 0; margin-bottom: 20px;">
+        Travel Support for Students
+    </h2>
+
+    <p style="font-size: 1.2em; line-height: 1.6; padding: 10px; margin: 0;">
+        Students are encouraged to apply for travel support through the main IROS 2024 website: 
+        <a href="https://iros2024-abudhabi.org/travel-support" style="color: #3498db; text-decoration: none;">https://iros2024-abudhabi.org/travel-support</a>.
+    </p>
+
+    <h2 style="font-size: 1.8em; font-weight: bold; color: #f39c12; text-align: center; margin-top: 0; margin-bottom: 20px;">
+        Volunteer
+    </h2>
+
+    <p style="font-size: 1.2em; line-height: 1.6; padding: 10px; margin: 0;"><span id="program"></span>
+        IROS 2024 is seeking volunteers for the conference. This is a great opportunity to get involved with the conference and comes with great perks. Please visit 
+        <a href="https://iros2024-abudhabi.org/cf-volunteers" style="color: #3498db; text-decoration: none;">https://iros2024-abudhabi.org/cf-volunteers</a> to apply.
+    </p>
+</div>
+
+
+
+
+
+	
+
+
+    	 <div class="content-txt">
+                    <div class="content-txt-main">
+                        <div class="this-anim">
+                            <span style="text-align: center;">Program</span>
+                            <span style="text-align: center;">Program</span>
+
+                     </div>
+                        
+						</div>
+					</div>
+
+
+
+				
+
+                    <div>
+  <table>
+    <thead>
+      <tr>
+        <th>Point</th>
+        <th>Topic</th>
+        <th>Time</th>
+        <th>Speaker</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Introduction</td>
+        <td>~10 mins</td>
+        <td>Dr. Chinwe Ekenna</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Keynote talk</td>
+        <td>20 mins</td>
+        <td>Dr. David Vernon</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Invited talk</td>
+        <td>15 mins</td>
+        <td>Dr. Marwa ElDiwiny</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Poster presentations / demos (3 min lightning talk format)</td>
+        <td>~20 mins</td>
+        <td>Students</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Break time</td>
+        <td>~20 mins</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Invited talk</td>
+        <td>15 mins</td>
+        <td>Dr. Paul Amayo</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>PARC competition finalist presentations (Presenters have a poster)</td>
+        <td>10 mins</td>
+        <td>Students</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Keynote talk</td>
+        <td>20 mins</td>
+        <td>Dr. Amir Patel</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Invited talk</td>
+        <td>10 mins</td>
+        <td>Dr. Ndivhuwo Makondo</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>State of Robotics in Africa Report</td>
+        <td>10 mins</td>
+        <td>Dr. Kenechukwu Mbanisi</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Panel/Group discussion</td>
+        <td>30 mins</td>
+        <td>D. Vernon, A. Patel, organizers, Marwa, Makondo, Paul, Steering committee</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Moderator</td>
+        <td>-</td>
+        <td><span id="sponsors"></span>Dr. Chinwe Ekenna</td>
+      </tr>
+      <tr>        <td>13</td>
+        <td>Conclusion</td>
+        <td>~2 mins</td>
+        <td>Dr. Chinwe Ekenna</td>
+      </tr>
+
+
+    </tbody>
+  </table>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+		
+
+                            <div class="content-txt">
+                    <div class="content-txt-main">
+                        <div class="this-anim">
+                            <span>Sponsors</span>
+                            <span>Sponsors</span>
+                        </div>
+                        <h2><span id="organizers"></span>TDB</h2>
+                        </div>
+
+                        </div>
+
+
+
+                        </div>
+
+                            <div class="content-txt">
+                    <div class="content-txt-main">
+                        <div class="this-anim">
+                            <span style="text-align:center;">Organizing Committe</span>
+                            <span style="text-align:center;">Organizing Committe</span>
+                        </div>
+                        
+
+
+
+
+
+
+                            <div  class="container">
+            <div  class="card">
+                <div  class="box">
+                    <div  class="content">
+                        <span><img src="Images/Chinwe.png" alt="Ekenna" width="90%" height="40%"></span>
+                        <h3></h3>
+                        <p> Dr. Chinwe Ekenna is an Associate Professor in the Department of Computer Science at ...</p>
+                        <a href="#ekenna">Read More</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+                <div  class="card">
+                <div  class="box">
+                    <div  class="content">
+                        <span><img src="Images/Ken1.png" alt="Ken" width="90%" height="40%"></span>
+                        <h3></h3>
+                        <p> Kenechukwu (fondly called ‘Kene’) is very passionate about two things: ...</p>
+                        <a href="https://www.olin.edu/bios/kenechukwu-mbanisi-0">Read More</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div  class="card">
+                <div  class="box">
+                    <div  class="content">
+                        <span><img src="Images/Adee.png" alt="Ade" width="90%" height="40%"></span>
+                        <h3></h3>
+                        <p> Simeon Adebola is passionate about developing interdisciplinary approaches ...</p>
+                        <a href="https://roboarmblog.com/">Read More</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+             <div  class="card">
+                <div  class="box">
+                    <div  class="content">
+                        <span ><img src="Images/Azi.png" alt="Az" width="90%" height="40%"></span>
+                        <h3></h3>
+                        <p> Addisu Taddese, Intrinsic is passionate about applying robotics research and advanced algorithms to solve challenging….</p>
+                        <a href="https://www.vanderbilt.edu/vise/visepeople/addisu-z-taddese/">Read More</a><span id="ekenna"></span>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+                
+            <div>
+                <div id = "speakers"></div>
+                <div class="content-txt" >
+                    <div class="content-txt-main">
+                        <div class="this-anim">
+                            <span style="text-align: center;" >Speakers</span>
+                            <span style="text-align: center;">Speakers</span>
+
+                     </div>
+                        
+                        </div>
+                    </div>
+
+
+
+                <h1 style="color: #1C205C; text-align: center; margin-bottom: 20px;">Invited Speakers' Biography</h1>
+               
+
+  <p style="font-size: 16px; color: #1C205C; text-align: justify;">
+    The topics will focus on discussing the challenges and opportunities within the robotics landscape in Africa, as well as the individual research of the speakers. 
+    The discussions will explore various cutting-edge areas of robotics, including:
+  </p>
+
+    <ul style="font-size: 16px; color: #1C205C; margin-top: 10px; padding-left: 40px; list-style-type: disc;">
+    <li style="margin-bottom: 8px;">Cognitive robotics</li>
+    <li style="margin-bottom: 8px;">Bipedal robots</li>
+    <li style="margin-bottom: 8px;">Self-driving cars</li>
+    <li style="margin-bottom: 8px;">Control systems</li>
+    <li style="margin-bottom: 8px;">Robot learning</li>
+    <li style="margin-bottom: 8px;">Mobile manipulators</li>
+  </ul>
+
+                    
+
+
+
+                    <section class = "grid" >
+            <article>
+
+
+
+
+
+
+                
+               <span> <img src="Images/Chinwee.png" alt="Ekenna" width="90%" height="40%"></span>
+
+                <div class="text">
+                    <h3>Dr Chinwe Ekenna</span></h3>
+                    <p> Dr. Chinwe Ekenna is an Associate Professor in the Department of Computer Science at the University at Albany, State University of New York, and the <a href = "https://www.albany.edu/computer-science/faculty/chinwe-ekenna" class="director-link">Director of the Robotics, Algorithm and Computable Systems (RACS) Laboratory.</a> Dr. Ekenna is a faculty advisor for UAlbany's student chapter of the Association for Computing Machinery-Women (ACM-W) and participates in publicly engaged activities which encourage young women in STEM. One such activity was the Meet the Women in Robotics Workshop (WiRW) at the 2019 Robotics: Science and Systems Conference (R:SS) on June 23, 2019, which she presented with researchers from the U.S. Air Force Academy. The workshop was designed to raise the visibility of women in robotics, strengthen the community of female roboticists by bringing together women from various disciplines and subfields in robotics, provide opportunities for networking, and connect junior female robotics researchers to senior mentors in the field. The workshop was funded by the National Science Foundation.  </p>
+                    <button><a href = "https://www.albany.edu/computer-science/faculty/chinwe-ekenna" class="director-link" style="text-decoration: none;">Read More...</a></button>
+                </div>
+            </article>
+
+
+            <article>
+                
+                <img src = "Images/dvernon.png" alt="image">
+                <div class="text">
+                    <h3>Dr. David Vernon</h3>
+                    <p> David Vernon is a Research Professor at Carnegie Mellon University Africa. He received his 
+
+B.A. and B.A.I. degrees from the University of Dublin, Trinity College, in 1979, and his Ph.D. 
+
+degree in 1985. Since graduating, he has held positions at Westinghouse Electric, Trinity 
+
+College Dublin, the European Commission, National University of Ireland, Maynooth, 
+
+Science Foundation Ireland, Khalifa University, University of Genoa, Technical University of 
+
+Munich, University of Skövde, and University of Bremen. His work focusses on cognitive 
+
+robotics, with particular emphasis on cognitive architectures. He is the author of over 140 
+
+technical publications and four books. He was the technical coordinator of the EU-funded 
+
+RobotCub project that developed the iCub cognitive humanoid robot. He was a founding 
+
+co-chair of the IEEE Robotics and Automation Society (RAS) Technical Committee for 
+
+Cognitive Robotics, and he currently serves on the IEEE RAS Women in Engineering 
+
+Committee and Diversity, Equity, and Inclusion Committee. He is a Life Senior Member of 
+
+the IEEE, a Chartered Engineer and Fellow of the Institution of Engineers of Ireland, a 
+
+Research Fellow at the Kigali Collaborative Research Centre, Rwanda, and a past Fellow of 
+
+Trinity College Dublin, Ireland. 
+
+<a href="https://engineering.cmu.edu/directory/bios/vernon-david.html" class="director-link">Website: www.vernon.eu </a>
+
+ <a href="mailto:david@vernon.eu" >Email: david@vernon.eu </a>
+
+<a href="mailto:vernon@cmu.edu" >vernon@cmu.edu </a>
+
+<a href="mailto:vernon@ieee.org" >vernon@ieee.org</a> 
+ </p>
+                 <button><a href = "https://engineering.cmu.edu/directory/bios/vernon-david.html" class="director-link" style="text-decoration: none;">Read More...</a></button>
+                </div>
+            </article>
+
+
+            <article>
+                
+                <img src = "Images/Amir.png" alt="image">
+                <div class="text">
+                    <h3> Dr. Amir Patel</h3>
+                    <p> Professor Amir Patel is a Mechatronics Engineer. His pursuit of designing the next generation of robots informed his research on cheetahs and has been groundbreaking in understanding rapid manoeuvres (turning, acceleration and braking) of both animals and robots, resulting in novel robots, innovative sensing systems and new algorithms for the simulation of robotic systems. Prof Patel obtained his PhD in Biomechanics at the University of Cape Town. In 2016, he won the Claude Leon Merit for Young Researchers and was appointed Visiting Research Scholar at Carnegie Mellon University and Johns Hopkins University. In 2019, his team developed Africa’s first bipedal robot, “Baleka”, prominently featured in the media. He co-founded the African Robotics Unit, Africa’s first robotic research unit, and currently serves as its director. He was named as one of only two Africans to receive the Google Research Scholar award and was promoted to Associate Professor at UCT. He currently supervises three PhD and seven Master’s students, and has graduated seven students to completion. His publications include one book chapter, two international patents, 17 journal articles, and 15 conference proceedings.  </p>
+                    <button><a href = "https://www.nrf.ac.za/about-us/nrf-awards/2022-2/research-excellence-award-for-early-career-emerging-researchers-2022/associate-professor-amir-patel/" class="director-link" style="text-decoration: none;">Read More...</a></button>
+                </div>
+            </article>
+
+            <article>
+                
+                <img src = "Images/Paul.png" alt="image">
+                <div class="text">
+                    <h3>Dr. Paul Amayo</h3>
+                    <p> Dr Paul Amayo is a Senior Lecturer and Principal Investigator in the African Robotics Unit at the University of Cape Town. He has broad experience in both hardware and software development over various sectors (from self-driving cars in the UK to paratransit in Kenya) with a primary focus on robotics. He has Dphil in Engineering Science from the Oxford Robotics Institute, University of Oxford. Paul strongly believes that technology holds the key to solving some of the world's and in particular Africa's most pressing problems. His interests are therefore not only in advancement of technology through research but also in its subsequent education that ensures that this technology is adopted into communities where it would do the most good. </p>
+                     <button><a href = "https://mozisha.com/events/paul-amayo" class="director-link" style="text-decoration: none;">Read More...</a></button>
+                </div>
+            </article>
+        
+
+        <article>
+                
+                <img src = "Images/Marwa.png" alt="image">
+                <div class="text">
+                    <h3>Ms. Marwa ElDiwiny</h3>
+                    <p> Marwa A. ElDiwiny is a researcher PhD working on modelling and simulating self-healing soft materials for industrial applications at VUB. She Founder and CEO of SoftBoticsX, Brussels, Belgium and Host of the Soft Robotics Podcast
+
+                    dedicated to the soft robotics community and audience who are interested in soft robotics technology. She interviews guests from both academia and industry to discuss their latest research besides highlighting the soft robotics challenges in the academic and industrial worlds. Since technology should interact with not only scientists, she also interviews philosophers, kids and laypeople about how they feel and think about robotics </p>
+                    <button><a href = "https://robohub.org/author/marwa-mohammed-alaa-eldean-eldiwiny/" class="director-link" style="text-decoration: none;">Read More...</a></button>
+                </div>
+            </article>
+
+
+            <article>
+                
+                <img src = "Images/Makondo.png" alt="image">
+                <div class="text">
+                    <h3>Dr. Ndivhuwo Makondo</h3>
+                    <p> Ndivhuwo Makondo is a Research Scientist in Machine Learning at IBM Research | Africa, in the South Africa Lab. He holds a BSc and an MSc (specializing in Robotics) in Electical Engineering from the University of Cape Town, South Africa; and a PhD in Computational Intelligence and Systems Science from the Tokyo Institute of Technology, Japan. He began his career on a Masters Studentship at the Council for Scientific and Industrial Research (CSIR) in 2011, South Africa, in the Mobile Intelligent Autonomous Systems (MIAS) group, where he conducted research on stability analysis and path planning for a mobile manipulator as part of the Mining Safety Platform project. He then enrolled for a PhD at the Tokyo Institute of Technology in 2013, on a MEXT scholarship, conducting research in Machine Learning and Robotics, where investigated the acceleration of robot learning of motor skills with knowledge transfer.
+
+                    Prior to joining IBM Research in 2019, he was research lead of mobile manipulation at CSIR MIAS for a year, where he led a team investigating the deployment of robot manipulators in unstructured and dynamic environments. He is also currently a Visiting Lecturer at the School of Computer Science and Applied Mathematics at the University of the Witwatersrand in Johannesburg, South Africa. </p>
+                    <button><a href = "https://research.ibm.com/people/ndivhuwo-makondo" class="director-link" style="text-decoration: none;" id="poster">Read More...</a></button>
+                
+                </div>
+            </article>
+        </div>
+
+
+
+
+                                       <div class="content-txt">
+                    <div class="content-txt-main">
+                        <div class="this-anim">
+                            <span>Poster</span>
+                            <span>Poster</span>
+                        </div>
+                        
+                        </div>
+
+                        </div>
+
+
+                                    <div>
+                            
+
+                                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: Arial, sans-serif; font-size: 14px;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid black; padding: 8px 12px; background-color:#0E1257; text-align:    center;">Paper ID</th>
+                <th style="border: 1px solid black; padding: 8px 12px; background-color: #0E1257; text-align:    center;">Paper Title</th>
+                <th style="border: 1px solid black; padding: 8px 12px; background-color:#0E1257; text-align:    center;">Authors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">1</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Navigating STEM Education: Integrating Educational Robotics Programs in Nigerian Secondary Schools</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Samuel O Yusuf (African Educational STEM Learning without barriers Foundation); Ayobambo O Jegede (African Educational STEM Learning without barriers foundation)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">4</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Robotic Telescopes and Geodetic Robotics for Sustainable Agricultural Planning in Africa</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Zainaaz Hansa (North West University); Heystek Grobler (North West University)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">7</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Empowering STEM Education in Africa: Sustainable Production of Robotic Kits through Recycling and 3D Printing Technologies</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Oluwapelumi A Ojo (Coderina Education And Technology Foundation); Oluwatosin Olugbemi (Coderina Education And Technology Foundation); Christiana Anthony (Coderina Education And Technology Foundation); Faith Effiong (Coderina Education And Technology Foundation); David Bamisaiye (Coderina Education And Technology Foundation); Stephen Enyioke (Coderina Education And Technology Foundation); Christian OLARINRE (CODERINA EDTECH)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">8</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Surveying Rwandan Cultural Knowledge for Respectful Human-Robot Interaction in Africa</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Eyerusalem Mamuye Birhan (Carnegie Mellon University Africa); David Vernon (Carnegie Mellon University Africa)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">9</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Biological Motion for Gestural Communication in Social Robots</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Adedayo S Akinade (Carnegie Mellon University Africa); David Vernon (Carnegie Mellon University Africa)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">10</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">A Realization of the Situation Model Framework in the CRAM Cognitive Architecture with Deep Learning</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Muhammed Danso (Carnegie Mellon University Africa); David Vernon (Carnegie Mellon University Africa)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">11</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Behavior Trees for Culturally Sensitive Social Robots: African Culture Case Study</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Ibrahim Jimoh (Carnegie Mellon University - Africa); Heran Equbay (Carnegie Mellon University - Africa); Clifford Onyonka (Carnegie Mellon University - Africa); Tsegazeab Tefferi (Carnegie Mellon University - Africa); David Vernon (Carnegie Mellon University - Africa)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">12</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Robotics and Computer Vision for Sustainable Agriculture: A Case Study on Tomato Counting</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Jeslone Lukisa (SMARAF)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">13</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">IROS 2024: Team RobotsMali, 3rd at PARC (Pan-African Robotics Competition), presents its latest innovations.</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Hamidou Hamid Sanogo (RobotsMali)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">14</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">An Introduction to the ros2 control framework using a low cost Differential Drive Robot</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Chinedu Amadi (Independent)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid black; padding: 8px 12px;">N/A</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Optimisation of autonomous navigation of agricultural robots</td>
+                <td style="border: 1px solid black; padding: 8px 12px;">Tahiry Manantsiory RANDRIANJATOVO; Faly Christian ANDRIANARISON; Maminiaina Herizo MANAMPISOA; Avotriniaina MECENNI</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+                     </div>
+
+                           
+  </p>
+</p>
+</p>
+                            
+
+
+
+
+                        </div>
+
+                        </div>
+
+                         
+
+                        
+
+
+
+                                 <div class="content-txt">
+                    <div class="content-txt-main">
+                        <div class="this-anim">
+                            <span style="text-align:center; padding-top:    0px;"><span id="contact"></span>Contact Us</span>
+                            <span style="text-align:center;">Contact Us</span>
+                        </div>
+                        
+                        <p style="text-align: center; font-size: 16px; color: #333;">
+                            If you have any questions, please contact us at 
+                             <a href="mailto:roboticsinafrica@gmail.com" style="color: blue; text-decoration: none;">africarobotics@gmail.com</a>.
+
+                        </div>
+
+            </div>
+
+
+
+    <footer style="background-color: #333; color: white; padding: 20px; text-align: center; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+        <div style="flex: 1; min-width: 200px; text-align: center; padding: 10px;">
+             <h4 style="margin: 0;">About Us</h4>
+             <p style="margin: 5px 0;">We focus on innovation in robotics.</p>
+        </div>
+        <div style="flex: 1; min-width: 200px; text-align: center; padding: 10px;">
+            <h4 style="margin: 0;">Contact Us</h4>
+            <p style="margin: 5px 0;"><a href="mailto:contact@robotics.com" style="color: #fff; text-decoration: none;">contact@robotics.com</a></p>
+        </div>
+        <div style="flex: 1; min-width: 200px; text-align: center; padding: 10px;">
+             <h4 style="margin: 0;">Follow Us</h4>
+             <p style="margin: 5px 0;">
+             <a href="#" style="color: #fff; text-decoration: none; margin-right: 10px;"> Facebook<i class="fab fa-facebook-f" style="font-size: 24px;"></i></a>
+            <a href="#" style="color: #fff; text-decoration: none;">Twitter</a><i class="fab fa-twitter" style="font-size: 24px;"></i>
+      </p>
+    </div>
+  </footer>
+
+	
+</div>
+
+                         
+
+					
+</div>
+
+
 </body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="site.js"></script>
 </html>
