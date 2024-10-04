@@ -728,6 +728,66 @@ article button {
 
 
 
+
+
+
+
+.banner {
+    background: linear-gradient(to bottom right, #ffffff, #e9ecf3);
+    padding: 50px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 36px;
+    color: #00467f;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.banner ul {
+    list-style-type: none;
+    padding: 0;
+    color: #555;
+    font-size: 20px;
+}
+
+.banner li {
+    margin-bottom: 15px;
+    color: #2a3b5c;
+}
+
+.banner li::before {
+    content: "•";
+    color: #00467f;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .mode-toggler{
 	position:absolute;
 	width: 50px;
@@ -826,6 +886,10 @@ article button {
                 flex-direction: column;
                 align-items: flex-start;
             }
+
+
+
+
 
 
 
